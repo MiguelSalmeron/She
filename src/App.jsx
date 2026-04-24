@@ -2,6 +2,7 @@ import React from 'react';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import Login from './pages/Login';
 import BreathingBox from './components/ui/BreathingBox';
+import PixelPomodoro from './components/ui/PixelPomodoro';
 import './index.css';
 
 function AppContent() {
@@ -29,8 +30,9 @@ function AppContent() {
               </button>
             </section>
             
-            <section className="flex justify-center w-full">
+            <section className="flex flex-wrap justify-center w-full gap-8">
               <BreathingBox />
+              <PixelPomodoro />
             </section>
           </main>
         </>
