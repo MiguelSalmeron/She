@@ -15,7 +15,8 @@ export const useAuth = () => {
 };
 
 export const AuthProvider = ({ children }) => {
-  const [currentUser, setCurrentUser] = useState(null);
+  // Simulación de usuario para el "Avance Visual" (Opción B)
+  const [currentUser, setCurrentUser] = useState({ email: 'prueba@test.com' });
   const [loading, setLoading] = useState(false);
 
   // Registro de nuevo usuario

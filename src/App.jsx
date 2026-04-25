@@ -3,6 +3,7 @@ import { AuthProvider, useAuth } from './context/AuthContext';
 import Login from './pages/Login';
 import BreathingBox from './components/ui/BreathingBox';
 import PixelPomodoro from './components/ui/PixelPomodoro';
+import GratitudeJournal from './components/ui/GratitudeJournal';
 import './index.css';
 
 function AppContent() {
@@ -30,9 +31,10 @@ function AppContent() {
               </button>
             </section>
             
-            <section className="flex flex-wrap justify-center w-full gap-8">
+            <section className="flex flex-wrap justify-center items-start w-full gap-8">
               <BreathingBox />
               <PixelPomodoro />
+              <GratitudeJournal />
             </section>
           </main>
         </>
